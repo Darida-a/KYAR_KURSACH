@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Оформление</title>
+    <link rel="shortcut icon"  href="photo/Лого.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='SCSS/styles.css'>
+
+
+</head>
+<body>
+
+    <header class="header head1">
+        <div class="container">
+            <div class="logo-name">
+                <img class="logo" src="photo/Лого.svg">
+                <div class="name">Sushi Love</div>
+            </div>
+            <div class="tel-container">
+                <img class="telicon" src="photo/телефон.png">
+                <div class="telnumber">7777</div>
+            </div>
+            <a href="oformlenie.html"><img class="korzicon" src="photo/корзина.png"></a>
+            <button class="burger-menu" onclick="toggleMenu()">&#8801;</button>
+        </div>
+        <div id="menuOverlay" class="overlay" onclick="toggleMenu()"></div>
+        <nav id="burgerNav" class="nav">
+             <ul class="menu">
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <form id="order-form" class="order-form">
+      <h3 class="order-title">Оформление заказа</h3>
+      <input type="text" id="name" class="order-input" placeholder="Имя" required>
+      <input type="tel" id="number" class="order-input" placeholder="Телефон" required>
+      <input type="email" id="mail" class="order-input" placeholder="Email" required>
+      <input type="text" id="mess" class="order-input" placeholder="Комментарий">
+      
+      <label for="date" class="order-label">Дата доставки:</label>
+      <input type="date" id="date" class="order-input">
+      
+      <label for="time" class="order-label">Время доставки:</label>
+      <input type="time" id="time" class="order-input" required>
+      
+      <div class="button-container2">
+          <button type="submit" class="submit-btn2">Отправить</button>
+          <button type="reset" class="reset-btn2">Очистить</button>
+      </div>
+  </form>
+  
+  
+</main>
+    
+<footer class="footer"> 
+  <div class="contact-info contact-info2"> 
+     <p>7777</p> 
+     <p>sushilove77@gmail.com </p> 
+  </div> 
+  <p>Беларусь, г.Минск</p> 
+  <div class="links"> 
+    <p><a href="main.html">Главная</a> <br> 
+      <a href="menu.html">Меню</a><br> 
+      <a href="aboutus.html">О нас</a><br> 
+      <a href="delivery.html">Доставка</a><br>
+    </p> <p><a href="menu.html#roll">Роллы</a><br> 
+      <a href="menu.html#sushiset">Суши-сеты</a><br> 
+      <a href="menu.html#sauce">Соусы</a><br> 
+      <a href="menu.html#drink">Напитки</a>
+    </p> 
+  </div> 
+  <svg width="100%" height="2" class="line"> 
+    <line x1="0" y1="1" x2="100%" y2="1" stroke="white" stroke-width="2" /> 
+  </svg> 
+  <div class="socialmed"> 
+    <a href="https://github.com/Darida-a" >
+      <img src="photo/github_white.png"></a> 
+      <a href="https://github.com/Darida-a" >
+        <img src="photo/inst_white.png" ></a> 
+        <a href="https://github.com/Darida-a" >
+          <img src="photo/vk_white.png" ></a> 
+          <a href="https://github.com/Darida-a" >
+            <img src="photo/facebook_white.png" ></a> 
+          </div> 
+        </footer>
+    <script src="styles.js"></script>
+</body>
+</html>
